@@ -16,36 +16,14 @@ import plotly.express as px
 import plotly.figure_factory as ff
 import seaborn as sns
 import plotly.graph_objects as go
-
-
-
-
-
 import warnings
-
 import streamlit as st
 from bokeh.plotting import figure
 import squarify
 warnings.filterwarnings("ignore")
-
+st.set_page_config(layout="wide")
 
 data = pd.read_csv(r"./dataset.csv")
-
-st.set_page_config(
-     page_title="PATIENT SURVIVAL PREDICTION",
-     page_icon="🧊",
-     layout="wide",
-     initial_sidebar_state="collapsed",
-     menu_items={
-         'About': "https://www.kaggle.com/mitishaagarwal/patient",
-         'Get help': "https://github.com/Nesmad/Project-5--Patients-Survival-"
-     }
- )
-
-
-
-
-
 
 
 plt.style.use("dark_background")
@@ -66,10 +44,6 @@ plt.rcParams['xtick.labelsize'] = 3
 plt.rcParams['ytick.labelsize'] = 3
 plt.rcParams['legend.fontsize'] = 3
 plt.rcParams['figure.titlesize'] = 6
-
-
-
-
 
 
 
